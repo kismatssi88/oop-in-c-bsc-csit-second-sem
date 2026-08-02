@@ -1,17 +1,30 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 int main()
 {
-    int a = 10;
-    float b = 5.5;
+    int n;
 
-    // Implicit typecasting
-    double result1 = a + b; // 'a' is implicitly converted to double
-    cout << "Result of implicit typecasting: " << result1 << endl;
+    cout << "Enter number of elements: ";
+    cin >> n;
 
-    // Explicit typecasting
-    int result2 = (int)b; // 'b' is explicitly converted to int
-    cout << "Result of explicit typecasting: " << result2 << endl;
+    int *arr = new int[n];
+
+    cout << "Enter elements:\n";
+
+    for(int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    cout << "\nArray Elements:\n";
+
+    for(int i = 0; i < n; i++)
+    {
+        cout << arr[i] <<"";
+    }
+
+    delete[] arr;
 
     return 0;
 }
