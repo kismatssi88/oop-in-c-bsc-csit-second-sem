@@ -1,0 +1,2 @@
+Hello, this is my first file handling program.
+C++ file streams make data permanent.
